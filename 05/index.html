@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+  <!--form 요소를 그룹으로 묶기 : fieldset, legend -->
+  <h1>레드향 주문하기</h1>
+  <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+    </fieldset>
+    <fieldset>
+      <legend>배송 정보</legend>
+    </fieldset>
+
+    <!--항목 추가 label 에 input를 위치-->
+    <label>아이디 (6자리 이상)<input type="text" id="user-id"></label>
+    <br>
+    <!--항목 추가 : label 과 input 이 분리됨-->
+    <label for="user-id">아이디(6자리 이상)</label>
+    <input type="text" id="user" size="20">
+    <br>
+    <label for="user-pw">비밀번호</label>
+    <input type="password" id="user-pw" size="100">
+    <br>
+    <input type="submit" value = "로그인">
+  </form>
+</body>
+</html>

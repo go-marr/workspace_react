@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스타일 적용 - cascade</title>
+    <style>
+      /*내부 스타일
+      1순위 : !important 를 스타일 규칙에 붙이는 경우.
+      2순위 : 인라인 스타일
+              태그 안에 style 속성을 사용해서 해당 태그만 스타일을 적용.
+      3순위 : id 스타일
+              #을 붙여 사용하는 스타일. 한 문서에 한 번만 적용.
+      4순위 : class 스타일
+              .을 붙여 사용하는 스타일. 문서 안에서 여러번 사용할 수 있음.
+      5순위 : 타입 스타일
+              타입 선택자와 동일하게 사용하는 스타일.
+
+      */
+      p{
+        color:hotpink;
+      }
+      h1{
+        color: blue !important;
+      }
+      p{
+        color: sandybrown;
+      }
+    </style>
+</head>
+<body>
+<!--인라인 스타일 : 2순위-->
+  <h1 style="color: green">안녕하세요</h1>
+  <p style="color: red">무슨 색일까요? </p>
+  <p>과연~~핑크와 주황색 중</p>
+</body>
+</html>

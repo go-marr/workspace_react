@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       /* body의 margin : 8 -> 브라우저의 기본 margin */
+       /* *{
+         margin: 0;
+         } */
+        div{
+            padding: 20px;
+            margin: 10px;
+        }
+        /*위치 기준은?
+        margin은 왜 중첩이 안되는지?
+        margin은 왜 중첩이 되는지?
+        floating 의 간격은? */
+        #box1{
+            /*body 기준으로 왼쪽에서 부터 자리를 잡게 됨.
+             바디의 마진이 중첩 되지 않도록 floating 됨*/
+            background: lightpink;
+            float: left;
+        }
+        #box2{ /*박스 1의 float 로 인해 박스 1 옆에 붙여지며 가로로 붙여지니 마진이 겹지치 않는다.
+        박스 1을 기준으로 마진을 유지하면서, floating 됨*/
+            background: lightgrey;
+            float: left; /*왼쪽에 붙어*/
+        }
+        #box3{ /* 박스 3에는 float를 지정하지 않아 맨위에 붙어버렸다 float 하지 않았기 때문에 옆으로 길게 나온다
+        그냥 블록 레벨 요소임
+        floating 된 박스1, 박스2 와의 위치 관계는 없음.
+        바디를 기준으로 왼쪽의 마진(바디와 자기자신)은 유지하게 되고
+        탑 쪽의 마진은 중첩되게 위치함
+        ( => 블록 레벨 요소가 세로로 위치하는 경우 마진 중첩이 발생하기 때문 )*/
+            background: darkgoldenrod;
+
+        }
+        #box4{ /*박스 2 기준으로, 박스 3 마진과 중첩이 되지 않도록 마진을 유지하면서 플러팅이 됨.
+        float의 간격은 마진크기와 같다*/
+            background: dodgerblue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id = "box1">박스1</div>
+<div id = "box2">박스2</div>
+<div id = "box3">박스3</div>
+<div id = "box4">박스4</div>
+</body>
+</html>

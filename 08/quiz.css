@@ -1,0 +1,54 @@
+/*
+1. block level 요소(div) 의 style 지정
+    - border style : line 설정
+    - padding 설정
+    - margin 설정
+2. 첫번째 div 와 세번째 div 의 모서리 라운드 처리
+3. 세번째 div의 table, th, th
+    - border 설정
+    - border 가 현재는 두 개를 하나로 표시되도록 설정.
+    - th, td 에 padding 적용.
+4. main div (suv div 가 3개로 구성)
+    - 중앙 정렬
+*/
+
+/*타입 스타일*/
+div {
+    width: 470px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+#round1 {
+    border-right: 1px solid darkgrey;
+    border-left: 1px solid darkgrey;
+    border-top: 1px dotted darkgrey;
+    border-bottom: 1px dotted darkgrey;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#box {
+    border: 1px dotted darkgrey;
+    margin-bottom: 20px;
+}
+
+#round2 {
+    border: 1px dotted darkgrey;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 20px;
+}
+table, th, td{
+    border: 1px solid #ccc;
+}
+th, td { padding:10px 10px;
+    text-align: center;
+}
+h1,h2,p,li{
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+

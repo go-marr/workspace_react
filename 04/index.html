@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상품 소개 페이지</title>
+    <style>
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td { padding:10px 20px; }
+    </style>
+</head>
+<body>
+<!--이미지 태그 : img
+    alt : 인터넷이 불안정한 경우 이미지 파일 경로를 잘 못 넣었을때 처럼 이미지를 제대로 표시할 수 없는 경우
+-->
+<img src="images/tangerines.jpg" alt="레드향">
+<h2>상품 구성</h2>
+<table>
+    <caption>선물용 및 가정용 상품 구성</caption>
+    <!--특정 열에 스타일 속성 지정하기-->
+    <colgroup>
+        <col style="background-color: #1fa8f8">
+        <col>
+        <col style="width: 100px;">
+        <col style="width:180px;">
+    </colgroup>
+    <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>갯수</th>
+        <th>가격</th>
+    </tr>
+    <tr>
+        <td>선물용</td>
+        <td>3Kg</td>
+        <td>11~16과</td>
+        <td>35,000원</td>
+    </tr>
+    <tr>
+        <td>선물용</td>
+        <td>5Kg</td>
+        <td>18~26과</td>
+        <td>55,000원</td>
+    </tr>
+    <tr>
+        <td>가정용</td>
+        <td>3Kg</td>
+        <td>11~16과</td>
+        <td>30,000원</td>
+    </tr>
+    <tr>
+        <td>가정용</td>
+        <td>5Kg</td>
+        <td>18~26과</td>
+        <td>50,000원</td>
+    </tr>
+</table>
+    <!--하이퍼링크 삽입하기 : 현재 페이지에서 이동-a href="../05/order.html"-->
+    <div>
+        <a href="../05/order.html"> 주문서 작성하기</a>
+    </div>
+<!--하이퍼링크 삽입하기 : 새탭에서 열기  target="_blank"---->
+    <div>
+        <a href="../05/order.html" target="_blank"> 주문서 작성하기(새탭)</a>
+    </div>
+</body>
+</html>
