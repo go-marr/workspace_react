@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz4</title>
+    <style>
+
+        a{
+            width: 100px;
+            text-align: center;
+            padding: 10px 0;
+            background: lightgrey;
+            float: left;
+        }
+        /* ul 스타일 적용 */
+         ul{
+            width: 605px;
+            list-style: none;
+            margin: 50px auto;
+        }
+        ul li:not(:nth-child(6)) a{
+            border-right: 1px solid black;
+        }
+        ul li:not(:last-child) a:hover{
+            background-color: black;
+            color:white;
+        }
+        ul li:nth-child(6) a:hover{
+            background-color: tomato;
+            color:white;
+        }
+       #contents a:link, a:visited{
+            color: black;
+            text-decoration: none;
+           text-align: center;
+           display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="contents">
+    <ul>
+        <li><a href="#"> menu1</a></li>
+        <li><a href="#"> menu2</a></li>
+        <li><a href="#"> menu3</a></li>
+        <li><a href="#"> menu4</a></li>
+        <li><a href="#"> menu5</a></li>
+        <li><a href="#"> menu6</a></li>
+
+    </ul>
+</div>
+</body>
+</html>

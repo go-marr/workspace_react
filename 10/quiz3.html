@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="css/quiz1.css">
+    <style>
+        /* 필수 입력 필드(required) 스타일 적용 */
+        /* 읽기 전용 필드(readonly) 스타일 적용 - border */
+        /* button 이 있는 filedset 의 border 제거 */
+        input.red {
+            border: 2px solid tomato;
+            border-radius: 5px;
+        }
+
+        input.red:focus {
+            outline: tomato;
+        }
+
+        input.black {
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+
+        input.black:focus {
+            outline: black;
+        }
+
+        input.white {
+            border: 1px solid white;
+        }
+
+        input.call {
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        button {
+            border: 1px solid #222;
+            border-radius: 20px;
+            display: block;
+            font-size: 16px;
+            margin: auto;
+            padding: 7px 20px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+<form id="contents">
+    <fieldset>
+        <legend>로그인 정보</legend>
+        <ul>
+            <li>
+                <label for="user-id">아이디</label>
+                <input class="black" type="text" id="user-id" name="user-id" required>
+            </li>
+            <li>
+                <label for="pw">비밀번호</label>
+                <input class="red" type="text" id="pw"required>
+            </li>
+            <li>
+                <label for="pw-check">비밀번호 확인</label>
+                <input class="red" class="red" type="text" id="pw-check" required>
+            </li>
+            <li>
+                <label>회원 등급</label>
+                <input class="white" type="text" value="준회원" readonly>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input class="red" type="text" placeholder="5자미만 공백없이" id="name" required>
+            </li>
+            <li>
+                <label for="user-mail">메일 주소</label>
+                <input class="red" type="email" placeholder="abcd@domain.com" id="user-mail" required>
+            </li>
+            <li>
+                <label for="user-tel">연락처</label>
+                <input class="call" type="tel" id="user-tel">
+            </li>
+        </ul>
+    </fieldset>
+    <button type="submit">제출</button>
+
+
+</form>
+</body>
+</html>
