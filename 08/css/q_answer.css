@@ -13,7 +13,7 @@ div{
 }
 #round2{ /*세번째 sub div*/
     border-bottom-left-radius: 30px;
-    border-bottom-rights-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 /*3. table th td 설정 */

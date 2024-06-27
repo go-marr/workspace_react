@@ -1,0 +1,61 @@
+
+
+/* 0. 브라우저 초기화*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 1. 웹페이지 바탕색 설정*/
+body{
+    background-color: #cccccc;
+}
+/* 2. form 에 대한 style*/
+#signup{
+    background-color:white;
+    border:1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* 3. form 의 fieldset 스타일 적용*/
+#signup fieldset{
+    border:1px solid #cccccc;
+    margin-bottom: 30px;
+}
+/* 4. form legend 스타일*/
+#signup legend{
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+/* 5. form ul li 스타일 */
+#signup ul li{
+    line-height:30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+}
+
+#signup lable{
+/*    순서 없는 리스트의 각 항목 구성은
+      label, input 의 두 요소로 구성됨.
+
+      따라서, 왼쪽으로 시작해서 위치 시키면서
+      label의 width 를 설정 => 자동적으로 input의 위치가 결정이 되어 버림.*/
+    float: left;
+    font-size: 14px;
+    width: 110px;
+}
+/* 6. form button 스타일 */
+#signup button{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    padding: 7px 25px;
+}

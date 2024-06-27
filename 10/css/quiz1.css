@@ -1,0 +1,58 @@
+body{
+    background: #cccccc;
+    padding: 30px;
+}
+#contents{
+    width: 600px;
+    margin:auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+fieldset {
+    margin:20px auto;
+    border: 1px solid lightgray;
+}
+
+legend{
+    font-size:30px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+ul li{
+    margin:20px;
+}
+input{
+    width: 250px;
+}
+input[type=submit] {
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border-radius: 30px;
+}
+li label {
+    width:120px;
+    float:left;
+    text-align:left;
+}
+#buttons{
+    text-align:center;
+}
+#submit{
+    border:1px solid lightgray;
+    padding:0px;
+}
+div > input{
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border-radius: 30px;
+}
